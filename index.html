@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Assignment 5
+    </title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h2>The Personal Info</h2>
+            <p><strong>Name:</strong> <span id="profileName"></span></p>
+            <p><strong>Birth year:</strong> <span id="profileYear"></span></p>
+            <p><strong>Age:</strong> <span id="profileAge"></span></p>
+            <p><strong>Is developer:</strong> <span id="profileDeveloper"></span></p>
+            <p><strong>Total hobbies:</strong> <span id="hobbyCount"></span></p>
+        </div>
+
+        <div class="card">
+            <h2>Form Input & Event Responses</h2>
+            <form id="profileForm">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter username" required>
+
+                <label for="birthYear">Birth Year</label>
+                <input type="number" id="birthYear" min="1926" max="2026" placeholder="Enter birth year" required>
+
+                <button type="submit">Create / Update Profile</button>
+            </form>
+            <p id="message"></p>
+        </div>
+
+        <div class="card">
+            <h2>DOM List Manipulation</h2>
+            <ul id="hobbyList"></ul>
+            <label for="newHobby">Hobby</label>
+            <input type="text" id="newHobby" placeholder="Enter a hobby">
+            <div class="buttons">
+                <button type="button" id="addButton">Add Item</button>
+                <button type="button" id="removeButton">Remove Item</button>
+            </div>
+            <p id="listMessage"></p>
+        </div>
+    </div>
+
+    <script src="java.js"></script>
+</body>
+</html>
